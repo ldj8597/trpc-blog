@@ -1,3 +1,4 @@
+import { registerUserSchema } from "../../schema/user-schema";
 import { createRouter } from "../createRouter";
 
 export const userRouter = createRouter()
@@ -5,5 +6,8 @@ export const userRouter = createRouter()
     async resolve({ ctx }) {},
   })
   .mutation("register", {
-    async resolve({ ctx }) {},
+    input: registerUserSchema,
+    async resolve({ input, ctx }) {
+      ctx.prisma;
+    },
   });
