@@ -22,11 +22,15 @@ const Header = () => {
             </Link>
           ))}
         </div>
-        <div className="flex gap-5">
-          <button className="text-xl">Sign in</button>
-          <button className="text-xl bg-indigo-500 text-white px-5 py-2 rounded-lg">
-            Sign up
-          </button>
+        <div className="flex items-center gap-5">
+          <Link href="/signin">
+            <a className="text-xl">Sign in</a>
+          </Link>
+          <Link href="/register">
+            <a className="text-xl bg-indigo-500 text-white px-5 py-2 rounded-lg">
+              Sign up
+            </a>
+          </Link>
         </div>
       </nav>
     </div>

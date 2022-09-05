@@ -20,4 +20,8 @@
   select {
     @apply w-full rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500;
   }
+
+  [type="submit"] {
+    @apply w-full bg-indigo-500 hover:bg-indigo-600 text-white px-5 py-2 rounded-lg shadow-sm focus:outline-none focus:ring focus:ring-offset-2 focus:ring-indigo-500 cursor-pointer;
+  }
 }

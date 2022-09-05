@@ -1,17 +1,16 @@
-import type { NextPage } from "next";
 import Head from "next/head";
+import RegisterForm from "../components/RegisterForm";
+import { NextPageWithLayout } from "./_app";
 
-const Home: NextPage = () => {
+const Home: NextPageWithLayout = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>Create Next App</title>
       </Head>
 
-      <main>
-        <h1 className="text-4xl text-red-500">Hello World</h1>
-      </main>
-    </div>
+      <h1>Hello world</h1>
+    </>
   );
 };
 
